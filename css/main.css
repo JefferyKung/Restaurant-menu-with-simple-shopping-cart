@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #262626;
+}
+
+header {
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80) no-repeat center/cover;
+  height: 100vh;
+  width: 100%;
+}
+header .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5%;
+  flex-wrap: nowrap;
+}
+header .header-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.sub-heading{
+  margin-top: 2%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery .cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery .cards-wrapper .card {
+  width: 33.3333%;
+  height: 30vw;
+  display: block;
+  position: relative;
+}
+.gallery .cards-wrapper .card .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+.gallery .cards-wrapper .card .card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(211, 171, 85, 0.6);
+  color: #fff;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 0%;
+  height: 100%;
+  transition: 0.5s ease;
+}
+.gallery .cards-wrapper .card:hover .card-overlay {
+  width: 100%;
+}
+
+.footer {
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .footer-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.footer .social-media {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  list-style-type: none;
+}
+.footer .social-media i {
+  font-family: "Font Awesome 5 Brands";
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-size: 50px;
+  color: #bbb;
+  cursor: pointer;
+}
+.footer .footer-copyright {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  color: #bbb;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.logo img {
+  width: 90px;
+  height: 90px;
+  border: 3px solid #d3ab55;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.main-name {
+  font-family: "Nunito", sans-serif;
+  color: #bbb;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.sub-name {
+  font-size: "Josefin Sans", sans-serif;
+  color: #bbb;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.header-banner {
+  font-size: 3rem;
+}
+.header-banner h1 {
+  color: #d3ab55;
+  font-family: "Dancing Script", cursive;
+}
+.header-banner h3 {
+  font-size: "Josefin Sans", sans-serif;
+  color: #bbb;
+}
+
+.card-overlay-btn {
+  width: 150px;
+  height: 40px;
+  color: #d3ab55;
+  background-color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid #d3ab55;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+.card h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.card p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=main.css.map */
+
+#narBar {
+  /* background-color: white; */
+  display: flex;
+  position: absolute;
+  left: 87%;
+  top:10px;
+  color: white;
+}
+
+#cartImage{
+  width: 30%
+}
+
+#cartImage:hover,
+#cartImage:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#narBar h3{
+  margin-top: 10%;
+  margin-left: 2%;
+  font-size: 1.5rem;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  z-index:999;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  text-align: center;
+ 
+}
+
+.modal-content p{
+  font-size: 1.5rem;
+  color: green;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#cartList {
+  background-color: rgba(247, 86, 86, 0.7);
+  margin-top: 6.5%;
+  margin-left: 72.5%;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 26%; /* Could be more or less, depending on screen size */
+  height: 65%;
+  text-align: center;
+  display:none;
+  z-index:999;
+  color: rgb(255, 255, 255);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#cartList p{
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+
+/* The Close Button */
+.cartListclose {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cartListclose:hover,
+.cartListclose:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type='number']{
+  width: 23px;
+} 
