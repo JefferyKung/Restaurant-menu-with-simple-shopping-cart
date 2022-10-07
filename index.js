@@ -59,21 +59,26 @@ $(".cartListclose").click(function(){
         var th = document.createElement("th");
         th.innerHTML = '<input type="checkbox" checked onclick="calculate()">';
     
+        //品名
         var td1 = document.createElement("td");
         td1.innerText = spans[0].innerText;
     
+        //照片
         var td2 = document.createElement("td");
         var img = document.createElement("img");
         img.src = divGranny.getElementsByTagName("img")[0].src;
         img.width = "100";
         td2.appendChild(img);
     
+        // 價錢
         var td3 = document.createElement("td");
         td3.innerText = spans[1].innerText;
     
+        //數量
         var td4 = document.createElement("td");
         td4.innerHTML = '<input type="button" value="-" onclick="jian(this)"><input type="number" value="1"><input type="button" value="+" onclick="jia(this)">';
     
+        //刪除的按鈕
         var td5 = document.createElement("td");
         td5.innerHTML = '<input type="button" value="DELETE" onclick="del(this)">';
     
