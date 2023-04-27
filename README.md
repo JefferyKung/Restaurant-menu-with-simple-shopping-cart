@@ -1,12 +1,9 @@
-# Cuisinebo Starter Application
+# Restaurant-menu-with-simple-shopping-cart 
+(not respondsive)
 
-Clone this repository and run the command below to install the project's dependencies
+https://web2midterm.vercel.app/
 
-> npm install
-
-Run this command to start sass from compiling sass to css
-
-> npm run sass
-
-Have fun being sassy!
+![image](https://user-images.githubusercontent.com/102844561/234738978-a4aa4a3f-9f25-4ed1-a0bd-4179f255c769.png)
+![image](https://user-images.githubusercontent.com/102844561/234739000-ade3cbab-c60e-4dd6-96bf-55663f2a4d15.png)
+![image](https://user-images.githubusercontent.com/102844561/234739219-f98bf872-17f7-47fd-9ad8-0d8dd392d052.png)
 
